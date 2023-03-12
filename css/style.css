@@ -1,10 +1,13 @@
 * {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
+body {
+  margin: auto auto;
+}
 .container {
   display: flexbox;
   background-color: #ccc;
-  width: 50%;
+  width: 49%;
 
   padding: 10px;
   margin: auto;
@@ -21,7 +24,19 @@ header p {
   padding: 0;
   margin-top: 10px;
 }
-
+#img,
+img {
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+  margin: auto;
+  width: 100px;
+  margin-bottom: 10px;
+}
+nav {
+  display: flex;
+  justify-content: center;
+}
 nav ul,
 li {
   display: inline-block;
@@ -43,6 +58,7 @@ nav a:hover {
 }
 section h2 {
   text-align: center;
+  color: rgb(4, 4, 142);
 }
 section p {
   text-align: justify;
@@ -53,11 +69,23 @@ footer {
   text-align: center;
 }
 
+.images {
+  display: flex;
+}
+
 .images img {
+  display: inline-block;
   width: 120px;
   border-radius: 5px;
 }
 section iframe {
   display: block;
   margin: auto auto;
+}
+section p img {
+  width: 100px;
+  border-radius: 5px;
+  margin: 0;
+  float: left;
+  margin-right: 5px;
 }
